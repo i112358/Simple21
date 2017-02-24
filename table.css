@@ -6,21 +6,30 @@ body{
 	padding: 3em;
 }
 
+#welcome{
+	color: white;
+	font-family: 'Caveat',sans-serif;
+	font-size: 20px;
+	font-style: bold;
+}
+
 .wrapper{
+	color: white;
 	text-align: center;
-	font-family: Arial;
+	font-family: 'Caveat',sans-serif;
 	font-size: 20px;
 	font-style: bold;
 }
 
 #new{
 	background-color: pink;
-	color: brown;	
-	font-family: Arial;
+	color: brown;
+	border-radius: 10px;
+	font-family: 'Marck Script',sans-serif;
 	font-size: 20px;
 	font-style: bold;
 	text-align: center;
-	padding: 0.5em;	
+	padding: 0.5em;
 	margin-bottom: 1em;
 }
 
@@ -36,8 +45,9 @@ img{
 
 #hit button, #stand button{
 	background-color: aliceblue;
-	color: navyblue;
-	font-family: Arial;
+	border-radius: 10px;
+	color: black;
+	font-family: 'Marck Script',sans-serif;
 	font-size: 20px;
 	font-style: bold;
 	text-align: center;
@@ -53,4 +63,3 @@ img{
 	float: right;
 	margin-right: 20%;
 }
-

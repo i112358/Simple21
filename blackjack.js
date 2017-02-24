@@ -60,8 +60,6 @@ var dealerCards = [];
 var flag = 51;
 var win = false;
 
-
-
 function giveCard()
 {
 	document.getElementById("welcome").style.display = "none";
@@ -76,7 +74,7 @@ function giveCard()
 	for(i=dcchild.length-1; i>=0; i--)
 	{
 		dc.removeChild(dcchild[i]);
-	} 
+	}
 	for(j=ycchild.length-1; j>=0; j--)
 	{
 		yc.removeChild(ycchild[j]);
@@ -145,7 +143,7 @@ function addCard()
 	if(getValue(yourCards)>21)
 	{
 		removeButtons();
-		alert("You have BUSTED!");		
+		$("#bustModal").modal();
 		win = false;
 		endGame();
 	}
@@ -166,9 +164,9 @@ function dealerTurn()
 	}
 	if(getValue(dealerCards)>21)
 	{
-		alert("Dealer has BUSTED!");
+		$("#dealerBust").modal();
 		win = true;
-		endGame();		
+		endGame();
 	}else if(getValue(dealerCards)>=getValue(yourCards))
 	{
 		win = false;
@@ -211,7 +209,7 @@ function getValue(a)
 			ace = true;
 		}
 	}
-	if(ace==true&&ace+10<=21)
+	if(ace==true&&handVal+10<=21)
 	{
 		handVal = handVal + 10;
 	}
@@ -224,9 +222,9 @@ function endGame()
 	document.getElementById("dealerHand").firstChild.nextSibling.setAttribute("src", dealerCards[1].imgsrc);
 	if(win==false)
 	{
-		alert("You Lose!");
+		$("#loseModal").modal();
 	}else
 	{
-		alert("You Win!");
+		$("#winModal").modal();
 	}
 }
