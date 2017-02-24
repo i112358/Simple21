@@ -1,0 +1,56 @@
+body{
+	background-color: darkolivegreen;
+	border-style: double;
+	border-width: 1em;
+	border-color: brown;
+	padding: 3em;
+}
+
+.wrapper{
+	text-align: center;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: bold;
+}
+
+#new{
+	background-color: pink;
+	color: brown;	
+	font-family: Arial;
+	font-size: 20px;
+	font-style: bold;
+	text-align: center;
+	padding: 0.5em;	
+	margin-bottom: 1em;
+}
+
+.dealer, .player{
+	color: navyblue;
+	margin-bottom: 1em;
+}
+
+img{
+	width: 100px;
+	height: auto;
+}
+
+#hit button, #stand button{
+	background-color: aliceblue;
+	color: navyblue;
+	font-family: Arial;
+	font-size: 20px;
+	font-style: bold;
+	text-align: center;
+	padding: 0.3em;
+}
+
+#hit{
+	float: left;
+	margin-left: 20%;
+}
+
+#stand{
+	float: right;
+	margin-right: 20%;
+}
+
